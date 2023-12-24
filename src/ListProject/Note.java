@@ -62,6 +62,9 @@ public class Note extends JPanel{
 		
 	}
 	
+	/**
+	 * This method generates the text area of this task
+	 */
 	public void setTextArea() {
 		// makes the JTextArea of this JPanel that holds the string from 'text' of this task
 		note = new JTextArea(text);
@@ -75,6 +78,9 @@ public class Note extends JPanel{
 		this.add(note);
 	}
 	
+	/**
+	 * This method generates the delete button of this task that delets this task
+	 */
 	public void setDeleteButton() {
 		// makes the JButton representing "delete" button.
 		delete = new JButton("delete");
@@ -88,6 +94,9 @@ public class Note extends JPanel{
 		this.add(delete);
 	}
 	
+	/**
+	 * This method generates the complete button of this task that turns this JPanel green to indicate that this task is completed
+	 */
 	public void setCompletedButton() {
 		// makes the JButton representing "Completed" button.
 		completed = new JButton("Completed");

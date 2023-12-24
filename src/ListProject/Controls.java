@@ -52,9 +52,12 @@ public class Controls extends JPanel{
 		setCheckIfSavedNotification ();
 	}
 	
+	/**
+	 * This method generates the add note button of this control panel that adds a task
+	 */
 	public void setAddNoteButton() {
 		// makes the JButton representing "Add a Note" button.
-		addNote = new JButton("Add Note");
+		addNote = new JButton("Add Task");
 		// sets the size of the button
 		addNote.setPreferredSize(new Dimension(150, 30));
 		// sets the font of the text in the JButton
@@ -65,9 +68,12 @@ public class Controls extends JPanel{
 		this.add(addNote);
 	}
 	
+	/**
+	 * This method generates the clear notes button of this control panel that deletes all the tasks currently shown
+	 */
 	public void setClearNotesButton() {
 		// makes the JButton representing "Clear All Notes" button.
-		clearNotes = new JButton("Clear Notes");
+		clearNotes = new JButton("Clear Tasks");
 		// sets the size of the button
 		clearNotes.setPreferredSize(new Dimension(150, 30));
 		// sets the font of the text in the JButton
@@ -78,9 +84,12 @@ public class Controls extends JPanel{
 		this.add(clearNotes);
 	}
 	
+	/**
+	 * This method generates the save button of this control panel that saves the text information of all the tasks currently shown
+	 */
 	public void setSaveNotesButton() {
 		// makes the JButton representing "Save" button.
-		saveNotes = new JButton("Save Notes");
+		saveNotes = new JButton("Save Tasks");
 		// sets the size of the button
 		saveNotes.setPreferredSize(new Dimension(150, 30));
 		// sets the font of the text in the JButton
@@ -91,6 +100,9 @@ public class Controls extends JPanel{
 		this.add(saveNotes);
 	}
 	
+	/**
+	 * This method generates the right hand notification of this control panel that determines weather all the tasks are saved or not.
+	 */
 	public void setCheckIfSavedNotification () {
 		// makes the JLabel representing the notification which indicates weather all the tasks of the 'To Do List' are saved or not
 		checkIfSaved = new JLabel();
